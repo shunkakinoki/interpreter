@@ -6,3 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.68"
+bytes = "1.3.0"
+ethers = "1.0.2"
+hex = "0.4"
+revm = { git = "https://github.com/bluealloy/revm", rev = "488ef8ab62f433b1b434d2d81bc744a2db8f735f", default-features = false, features = [
+    "ethersdb",
+    "std",
+    "secp256k1",
+    "with-serde",
+]}
